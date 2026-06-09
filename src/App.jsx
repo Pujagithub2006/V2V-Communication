@@ -6,6 +6,13 @@ import Spaces from './components/Spaces.jsx';
 import Settings from './components/Settings.jsx';
 import { mqttService } from './utils/mqtt.js';
 
+// Testing for Feat 1, Subtask 1
+import { vehicleStatus } from './models/VehicleState.js';
+
+const testVehicle = vehicleStatus("V001");
+
+console.log("Test Vehicle Status:", testVehicle);
+
 // SVG Icons for bottom nav
 const IconDashboard = ({ active }) => (
   <svg viewBox="0 0 24 24" fill="none" stroke={active ? '#06d6a0' : '#4a5568'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
